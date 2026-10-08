@@ -1,8 +1,8 @@
 name: Deploy to GitHub Pages
 
+# 已改为仅手动触发：站点现由 Cloudflare 发布，push 时不再自动部署到 GitHub Pages。
+# 如需手动发布到 GitHub Pages，在 Actions 页面手动运行本工作流。
 on:
-  push:
-    branches: [ master ]
   workflow_dispatch:
 
 # Pages 部署需要的权限
