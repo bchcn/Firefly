@@ -16,7 +16,7 @@ export async function GET(context: APIContext): Promise<Response> {
 		title: siteConfig.title,
 		subtitle: siteConfig.subtitle || siteConfig.description || "",
 		entries,
-		authorName: profileConfig.name,
+		authorName: siteConfig.author || profileConfig.name,
 		generator: `Firefly v${pkg.version}`,
 		includeContent,
 	});

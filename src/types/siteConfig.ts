@@ -35,6 +35,7 @@ export type SiteConfig = {
 	site_url: string;
 	description?: string; // 网站描述，用于生成 <meta name="description">
 	keywords?: string[]; // 站点关键词，用于生成 <meta name="keywords">
+	author?: string; // 站点作者，用于生成 RSS / Atom 订阅的作者信息
 
 	lang: "en" | "zh_CN" | "zh_TW" | "ja" | "ru" | "ko";
 
